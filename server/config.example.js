@@ -13,13 +13,12 @@ const os = require('os');
 module.exports =
 {
 	// Listening hostname (just for `gulp live` task).
-	domain : process.env.DOMAIN || 'localhost',
+	domain : 'commercifly.ml' || 'localhost',
 	// Signaling settings (protoo WebSocket server and HTTP API server).
 	https  :
 	{
 		listenIp   : '0.0.0.0',
-		// NOTE: Don't change listenPort (client app assumes 4443).
-		listenPort : process.env.PROTOO_LISTEN_PORT || 4443,
+		listenPort : process.env.PROTOO_LISTEN_PORT || 80,
 		// NOTE: Set your own valid certificate files.
 		tls        :
 		{
@@ -120,8 +119,8 @@ module.exports =
 			listenIps :
 			[
 				{
-					ip          : process.env.MEDIASOUP_LISTEN_IP || '1.2.3.4',
-					announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP
+					ip          : process.env.MEDIASOUP_LISTEN_IP || '23.236.49.182',
+					announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP || '23.236.49.182'
 				}
 			],
 			initialAvailableOutgoingBitrate : 1000000,
@@ -137,8 +136,8 @@ module.exports =
 		{
 			listenIp :
 			{
-				ip          : process.env.MEDIASOUP_LISTEN_IP || '1.2.3.4',
-				announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP
+				ip          : process.env.MEDIASOUP_LISTEN_IP || '23.236.49.182',
+				announcedIp : process.env.MEDIASOUP_ANNOUNCED_IP || '23.236.49.182'
 			},
 			maxSctpMessageSize : 262144
 		}
