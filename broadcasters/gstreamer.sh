@@ -6,7 +6,7 @@ function show_usage()
 	echo "USAGE"
 	echo "-----"
 	echo
-	echo "  SERVER_URL=https://my.mediasoup-demo.org:4443 ROOM_ID=test MEDIA_FILE=./test.mp4 ./gstreamer.sh"
+	echo "  SERVER_URL=https://commercifly.ml ROOM_ID=test MEDIA_FILE=./test.mp4 ./gstreamer.sh"
 	echo
 	echo "  where:"
 	echo "  - SERVER_URL is the URL of the mediasoup-demo API server"
