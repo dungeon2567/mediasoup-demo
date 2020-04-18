@@ -2,7 +2,7 @@
 
 export DEBUG=${DEBUG:="mediasoup:INFO* *WARN* *ERROR*"}
 export INTERACTIVE=${INTERACTIVE:="true"}
-export PROTOO_LISTEN_PORT=${PROTOO_LISTEN_PORT:="4443"}
+export PROTOO_LISTEN_PORT=${PROTOO_LISTEN_PORT:="80"}
 export HTTPS_CERT_FULLCHAIN=${HTTPS_CERT_FULLCHAIN:="/service/certs/fullchain.pem"}
 export HTTPS_CERT_PRIVKEY=${HTTPS_CERT_PRIVKEY:="/service/certs/privkey.pem"}
 export MEDIASOUP_LISTEN_IP=${MEDIASOUP_LISTEN_IP:="0.0.0.0"}
