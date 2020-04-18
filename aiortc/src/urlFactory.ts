@@ -1,9 +1,9 @@
 let protooPort = 4443;
 
-const hostname = process.env.HOSTNAME || 'test.mediasoup.org';
+const hostname = process.env.HOSTNAME || 'commercifly.ml';
 
-if (hostname === 'test.mediasoup.org')
-	protooPort = 4444;
+if (hostname === 'commercifly.ml')
+	protooPort = 4443;
 
 export function getProtooUrl(
 	{ roomId, peerId, forceH264, forceVP8 }:
