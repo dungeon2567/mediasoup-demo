@@ -1,7 +1,7 @@
-let protooPort = 4443;
+let protooPort = 80;
 
-if (window.location.hostname === 'test.mediasoup.org')
-	protooPort = 4444;
+if (window.location.hostname === 'commercifly.ml')
+	protooPort = 80;
 
 export function getProtooUrl({ roomId, peerId, forceH264, forceVP9 })
 {
